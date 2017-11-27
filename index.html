@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>NODO</title>
+  <!-- Bootstrap core CSS-->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="css/menu-sidebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid nopadding">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <nav class="navbar navbar-inverse navbar-fixed-top"
+      id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">NODO</a>
+        </li>
+        <li><a href="views/helen.html">Helen Palacios</a></li>
+<!--         se pone la ruta del perfil  -->
+        <li><a href="views/agustin.html">Agust&iacute;n Mulato</a></li>
+        <li><a href="views/jonathan.html">Jonathan Palacios</a></li>      
+      </ul>
+    </nav>
+
+
+    <section id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+      <article class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/trabajosnodo.jpg" class="adaptar img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h1 class="section-heading">NODO</h1>
+            <h4 class="section-heading">estudio creativo</h4>
+            <br>
+            <p class="">NODO es un grupo de creativos freelancers, egresados de la carrera de Lic. en artes plásticas opción diseño gráfico de la Universidad de El Salvador, nos gusta trabajar en proyectos con respecto a la imagen gráfica y todas sus ramas y tratamos de hacer nuestro trabajo con la mayor calidad posible a fin de que los clientes esten satisfecho con nuestro trabajo.</p>
+            <p class="">Nos gustan los retos por ello nuestra misión es ser el mejor estudio y ser el preferida por varias empresas que les interese nuestro trabajo en diseño gráfico, 3D, ilustración y fotografía.</p>
+            <br>
+
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+           <div class="card text-center">
+            <img class="adaptar img-fluid" src="img/helen.jpg">
+            <div class="card-body">
+              <h4 class="section-heading">Helen Palacios</h4>
+              <h6 class="text-muted">3D</h6>
+              <p>Mi trabajo dentro de NODO consiste en la realización de piezas 3D ya sea personajes, ambientes u objetos que puedan contribuir a videojuegos, animaciones entre otros ámbitos, realizo mi trabajo con el mayor detalle posible y me acoplo a varios estilos dependiendo lo que el cliente necesite.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#">Ver m&aacute;s</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card text-center">
+          <img class="adaptar img-fluid" src="img/agustin.jpg">
+          <div class="card-body">
+            <h4 class="section-heading">Agust&iacute;n Mulato</h4>
+            <h6 class="text-muted">fot&oacute;grafo</h6>
+            <p>Mi trabajo en NODO es la fotografía, gusto de la fotografía tanto artística o publicitaria. Considero disparadores aquellas imágenes no tan obvias que desencadenan una memoria que te obligará visualmente a pensar en un tiempo y un lugar más profundos, es por ello que realizo mi trabajo con la mayor dedicación posible.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">Ver m&aacute;s</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card text-center">
+        <img class="adaptar img-fluid" src="img/jonathan.jpg">
+        <div class="card-body">
+          <h4 class="section-heading">Jonathan Palacios</h4>
+          <h6 class="text-muted">Ilustrador</h6>
+          <p>Mi trabajo dentro de NODO consiste en realizar todo el trabajo de ilustración, ya sea para story boards de animaciones o cortometrajes, además de aplicar la ilustración para otras ramas del diseño como: el branding corporativo o el diseño editorial para revistas y libros.
+        </p>
+        </div>
+        <div class="card-footer">
+          <a href="#">Ver m&aacute;s</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+<br>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy;</p>
+    <p class="m-0 text-center text-white">NODO estudio creativo</p>
+  </div>
+</footer>
+</section>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="js/jquery/jquery-1.12.4.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });  
+  });
+</script> 
+</div>
+</body>
+
+</html>
