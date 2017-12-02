@@ -94,3 +94,86 @@ h4{
    color: #f8f8f8;
     background-color: #343a40!important;
 }
+
+/* FVGBNM, */
+
+
+.navbar-inverse{
+  background: rgb(0, 0, 0) !important;
+  border: none !important;
+  border-radius: 0px !important;
+
+}
+
+
+.pull-right{
+  float: right;
+}
+
+@media (max-width:768px){
+  .pull-right{
+  float: left !important;
+    }
+    
+    .w100{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+}
+
+.active > a{
+  background: rgb(44, 184, 209) !important;
+
+}
+
+ul > li > a{
+  color: rgb(165, 223, 233) !important;
+  font-family: tahoma !important;
+}
+
+.navbar-toggle{
+  background: rgb(158, 222, 234) !important;
+
+}
+
+ul > li:hover > a{
+  background: rgb(138, 185, 193) !important;
+
+}
+
+.navbar{
+  margin-bottom: 0px !important;
+}
+
+.content-section-a{
+  padding: 50px 0;
+  background-color: rgb(237, 231, 231);
+
+}
+
+.content-section-b{
+  padding: 50px 0;
+  border-top: 5px solid rgb(6, 36, 65);
+  background-color: rgb(229, 149, 0)
+
+}
+
+.section-heading-spacer{
+  height: 5px;
+
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+
+}
+
+.banner{
+  padding: 100px 0;
+  color: rgb(248, 248, 248);
+  background: url(../img/banner-inf.jpg) no-repeat center;
+  background-size: cover;
+
+}
