@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nopadding{
+	padding: 0px !important;
+}
+
+.navbar-inverse{
+	background: rgb(0, 196, 195) !important;
+	border: none !important;
+	border-radius: 0px !important;
+	color: rgb(0, 0, 0)!important;
+
+}
+
+
+.nomargin{
+	margin: 0px !important;
+}
+
+.pull-right{
+	float: right;
+}
+
+@media (max-width:768px){
+	.pull-right{
+	float: left !important;
+    }
+    
+    .w100{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+}
+
+.active > a{
+	background: rgb(44, 184, 209) !important;
+
+}
+
+ul > li > a{
+	color: rgb(0, 0, 0) !important;
+	font-family: tahoma !important;
+}
+
+.navbar-toggle{
+	background: rgb(158, 222, 234) !important;
+
+}
+
+ul > li:hover > a{
+	background: rgb(145, 145, 145) !important;
+
+}
+
+.navbar{
+	margin-bottom: 0px !important;
+}
+
+.content-section-a{
+	padding: 50px 0;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255 );
+
+}
+
+.content-section-b{
+	padding: 50px 0;
+	background-color: rgb(0, 0, 0);
+	border-top: 10px solid rgb(0, 196, 195);
+	color: rgb(255, 255, 255 );
+}
+
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+
+}
+
+.banner{
+	padding: 100px 0;
+	color: rgb(248, 248, 248);
+	background: url(../images/banner-bg.jpg) no-repeat center;
+	background-size: cover;
+
+}
+
+.py-5{
+	padding-top: 3rem!important;
+	padding-bottom: 3rem !important;
+}
+
+.bg-dark{
+	color: rgb(0, 0, 0);
+	background-color: rgb(0, 196, 195);
+}
